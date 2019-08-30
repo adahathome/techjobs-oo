@@ -57,7 +57,7 @@ public class JobController {
             return ("redirect:/job?id="+ newJob.getId());
         }
 
-        return "";
+        return "new-job";
 
     }
 }
