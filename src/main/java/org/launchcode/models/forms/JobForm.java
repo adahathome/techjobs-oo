@@ -35,8 +35,11 @@ public class JobForm {
     private int positionTypeId;
 
     private ArrayList<Employer> employers;
+
     private ArrayList<Location> locations;
+
     private ArrayList<CoreCompetency> coreCompetencies;
+
     private ArrayList<PositionType> positionTypes;
 
     public JobForm() {
@@ -48,8 +51,11 @@ public class JobForm {
         */
 
         employers = jobData.getEmployers().findAll();
+
         locations = jobData.getLocations().findAll();
+
         coreCompetencies = jobData.getCoreCompetencies().findAll();
+
         positionTypes = jobData.getPositionTypes().findAll();
 
     }
@@ -78,13 +84,9 @@ public class JobForm {
 
     public void setCoreCompetencyId(int coreCompetencyId) { this.coreCompetencyId = coreCompetencyId; }
 
-    public int getPositionTypeId() {
-        return positionTypeId;
-    }
+    public int getPositionTypeId() { return positionTypeId; }
 
-    public void setPositionTypeId(int positionTypeId) {
-        this.positionTypeId = positionTypeId;
-    }
+    public void setPositionTypeId(int positionTypeId) { this.positionTypeId = positionTypeId; }
 
     public ArrayList<Employer> getEmployers() {
         return employers;
